@@ -14,7 +14,7 @@ public class Exercicio01 {
         double nota3 = leitor.nextDouble();
 
         double media = (nota1 + nota2 + nota3) / 3;
-        System.out.println("Média: " + media);
+        System.out.println("A média é: " + media);
 
     }
 
