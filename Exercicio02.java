@@ -1,21 +1,21 @@
-
-//Escrever um programa para determinar o consumo médio de um automóvel sendo fornecida a
-//distância total percorrida pelo automóvel e o total de combustível gasto.
 import java.util.Scanner;
 
-public class Exercicio02 {
+public class exercicio02 {
     public static void executar() {
-        Scanner leitor = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite a distância total percorrida pelo automóvel: ");
-        double distância = leitor.nextDouble();
+        System.out.print("Digite a distância total percorrida (em km): ");
+        double distancia = scanner.nextDouble();
 
-        System.out.println("Digite a quantidade em litros de combustível gasto: ");
-        double combustível = leitor.nextDouble();
+        System.out.print("Digite o total de combustível gasto (em litros): ");
+        double combustivel = scanner.nextDouble();
 
-        double médio = distância / combustível;
+        Automovel automovel = new Automovel(distancia, combustivel);
 
-        System.out.println("O consumo médio é: " + médio);
+        double consumoMedio = automovel.calcularConsumoMedio();
 
+        System.out.println("O consumo médio do automóvel é: " + consumoMedio + " km/l");
+
+        scanner.close();
     }
 }

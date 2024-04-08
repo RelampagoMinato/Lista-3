@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class exercicio01 {
+public class exercicio08 {
     public static void executar() {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,9 +15,9 @@ public class exercicio01 {
         System.out.print("Digite a terceira nota: ");
         double nota3 = scanner.nextDouble();
 
-        Alunomedia aluno = new Alunomedia(nome, nota1, nota2, nota3);
+        Alunonota aluno = new Alunonota(nome, nota1, nota2, nota3);
 
-        aluno.exibirMediaSemestre();
+        aluno.exibirMencao();
 
         scanner.close();
     }
