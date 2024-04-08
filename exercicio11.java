@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class exercicio11 {
 
     public static void executar() {
@@ -22,7 +23,7 @@ public class exercicio11 {
                 totalMulheres++;
             } else {
                 System.out.println("Sexo inválido. Por favor, digite M para masculino ou F para feminino.");
-                i--; 
+                i--;
             }
         }
 
@@ -31,4 +32,4 @@ public class exercicio11 {
 
         scanner.close();
     }
-} 
+}
