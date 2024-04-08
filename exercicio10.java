@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class exercicio10 {
     public static void executar() {
@@ -11,7 +12,7 @@ public class exercicio10 {
             int idade = scanner.nextInt();
 
             Pessoa pessoa = new Pessoa(idade);
-            System.out.println("Pessoa " + i + ": " + ((Pessoa) pessoa).getMensagemIdade());
+            System.out.println("Pessoa " + i + ": " + pessoa.getMensagemIdade());
         }
 
         scanner.close();
